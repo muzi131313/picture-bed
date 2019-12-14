@@ -1,0 +1,27 @@
+{
+  "name": "github-picture-bed",
+  "version": "1.0",
+  "description": "upload picture to github, and generate a visited online address",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "option-select/popup.html",
+    "default_icon": {
+      "16": "images/picture-bed16.png",
+      "32": "images/picture-bed32.png",
+      "48": "images/picture-bed48.png",
+      "128": "images/picture-bed128.png"
+    }
+  },
+  "icons": {
+    "16": "images/picture-bed16.png",
+    "32": "images/picture-bed32.png",
+    "48": "images/picture-bed48.png",
+    "128": "images/picture-bed128.png"
+  },
+  "options_page": "option-system/options.html",
+  "manifest_version": 2
+}
