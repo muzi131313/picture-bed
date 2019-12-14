@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>Github图床</title>
+    <style>
+      #github-img-info { padding: 10px; }
+      #img-info { display: flex; }
+      #img-info .img-wrap { width: 200px; }
+      #img-info .img-wrap img { width: 100%; border-radius: 10px; }
+      #img-info .img-links { flex: 1; }
+    </style>
+  </head>
+  <body>
+    <div id="github-img-info">
+      <header id="img-header">
+        header
+      </header>
+      <section id="img-info">
+        <div class="img-wrap">
+          <img id="img-show">
+        </div>
+        <div class="img-links">
+          <ul>
+            <li>
+              <h3>图片链接</h3>
+              <div class="input-wraps">
+                <input>
+                <button class="copy">复制</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="upload-success.js"></script>
+</html>
