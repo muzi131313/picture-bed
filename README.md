@@ -21,3 +21,8 @@ use for my personal picture storage online
 ### 前端相关
 - [Window/open | mdn](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open)
 ### 目录说明
+### 开发流程
+#### 选中图片后上传到github
+- 选中图片后，缓存图片信息
+- 打开一个窗口
+  - [window.open浏览器弹出新窗口被拦截—原因分析和解决方案 | csdn](https://blog.csdn.net/u011159417/article/details/53692536)
