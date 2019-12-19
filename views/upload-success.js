@@ -12,10 +12,10 @@ $store.get([ STORE_IMG_KEY ], function(info) {
 })
 
 var types = {
-  img: url => url,
-  html: url => `<img src="${url}">`,
-  ubb: url => `[IMG]${url}[/IMG]`,
-  markdown: url => `![undefined](${url})`
+  img: function(url) { return url },
+  html: function(url) { return '<img src="' + url + '">' },
+  ubb: function(url) { return '[IMG]' + url + '[/IMG]' },
+  markdown: function(url) { return '![undefined](' + url + ')' }
 }
 var copys = {
   baseId: 'copy',
@@ -23,7 +23,7 @@ var copys = {
   inputs: Object.keys(types),
   getCopyString: function(type, url) {
     var func = types[type]
-    return func(url)
+    return func(url ? decodeURIComponent(url) : url)
   },
   initByURL(url) {
     var baseId = this.baseId
