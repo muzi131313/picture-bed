@@ -64,10 +64,10 @@ chrome.runtime.onInstalled.addListener(function() {
   }
   // 2.图片右键菜单
   chrome.contextMenus.create({
+    "title": MENU_NAME,
     "type": "normal",
     "id": "picture-bed-upload",
-    "title": MENU_NAME,
-    "contexts": [ "image" ]
+    "contexts": [ "image" ],
   });
   chrome.contextMenus.onClicked.addListener(selectionOnClick)
 });
